@@ -2,6 +2,7 @@ import {useEffect, useState } from 'react';
 
 // Components
 import WorkoutDetails from '../components/WorkoutDetails.js';
+import WorkoutForm from '../components/WorkoutForm.js';
 
 const Home = () => {
 
@@ -19,7 +20,7 @@ const Home = () => {
         fetchWorkouts();
     }, [])
     return (
-        <div className="home max-w-[1640px] mx-auto p-4 flex flex-row justify-around bg-[#F1DEC9] h-screen">
+        <div className="home max-w-[1640px] mx-auto p-4 flex flex-row justify-around bg-[#F1DEC9]">
             <div className="w-3/4">
                 <div className='workouts'>
                     {workouts && workouts.map((workout)=> (
@@ -27,6 +28,7 @@ const Home = () => {
                     ))}
                 </div>
             </div>
+            <WorkoutForm />
         </div>
     )
 }
