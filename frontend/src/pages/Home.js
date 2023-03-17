@@ -20,7 +20,7 @@ const Home = () => {
         fetchWorkouts();
     }, [])
     return (
-        <div className="home max-w-[1640px] flex flex-row">
+        <div className="home max-w-[1640px] flex flex-row bg-rose-100">
             <div className='w-3/4'>
                 <div className='workouts'>
                     {workouts && workouts.map((workout)=> (

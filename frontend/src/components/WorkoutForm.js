@@ -37,8 +37,8 @@ const WorkoutForm = () => {
     }
 
     return(
-        <form onSubmit={handleSubmit} className='bg-white shadow-md rounded px-8 pt-6 pb-8 m-4'>
-            <h3>Add a New Workout</h3>
+        <form onSubmit={handleSubmit} className='px-8 pt-6 pb-8 m-4'>
+            <h3 className="text-xl font-bold text-rose-700"><bold>Add a New Workout</bold></h3>
 
             <label>Exercise Title</label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -62,7 +62,7 @@ const WorkoutForm = () => {
                 value={reps}
                 />
              
-             <button className="bg-blue-500 hover:bg-blue-700 mt-2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Add Workout</button>
+             <button className="bg-rose-700 hover:bg-rose-800 mt-2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Add Workout</button>
              {error && <div className="error">{error}</div>}
         </form>
     )
