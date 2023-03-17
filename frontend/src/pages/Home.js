@@ -1,4 +1,4 @@
-import {useEffect } from 'react';
+import { useEffect } from 'react';
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 
 // Components
@@ -18,7 +18,7 @@ const Home = () => {
             }
         }
         fetchWorkouts();
-    }, [])
+    })
     return (
         <div className="home max-w-[1640px] flex flex-row bg-rose-100">
             <div className='w-3/4'>
